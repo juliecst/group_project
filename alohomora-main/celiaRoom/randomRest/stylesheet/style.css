@@ -1,0 +1,140 @@
+/*first thing for everything*/
+*{
+    box-sizing:border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+ /*  getting rid of the white space and making the background fill the entire image  */
+
+ html, body {
+    margin: 0; 
+    padding: 0;
+ }
+ /*there was still a tiny bit left at the ul element so set the margin to 0 here too */
+
+ .nav ul{
+    margin:0; 
+ }
+ .nav li {
+    display: inline;
+ }
+ .nav a{
+    /* space out the header elements from each other */
+    display: inline-block;
+    padding: .5em;
+    color: rgb(237, 48, 104);
+    background-color:rgb(170, 209, 243)
+ }
+ .main-nav{
+    text-align:center;
+    font-size: 1.1 em; 
+    font-weight:900;
+   
+ }
+
+ .main-nav li {
+    padding: 6% 5%
+
+ }
+
+ .nav a:hover{
+    background-color: rgba(231, 137, 206, 0.281);
+ }
+
+ .main-header {
+    background-image: url("../images/backgroundHead.jpeg");
+    background-size: cover;
+    background-blend-mode: difference;
+    padding:15px
+}
+
+.piece-name{
+    text-align: center;
+    margin: 0;
+    font-size: 6em;
+    color:#f0ff00;
+    
+}
+.piece-name-large {
+    font-size: 7em;
+    color:#f0ff00;
+}
+.sub-name {
+    text-align:center;
+    font-size: 5em;
+    color:#f0ff00;
+}
+
+.container{
+    max-width: 900 px;
+    padding: 0;
+    margin: 0 auto; 
+    line-height: 1.5;
+    color:#f0ff00;
+    background-image: url("../images/backgroundYim.jpeg");
+   
+}
+
+.content-section{
+    text-align: right;
+  
+    
+}
+
+.section-header {
+    text-align: center; 
+    font-size: 2.5em; 
+}
+
+.side-text {
+    margin: -10px 25px;
+}
+.bathtub{
+    float: right;
+    height: 60%;
+    width: 60%;
+    margin: 20px;
+    
+}
+.about-image{
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 50% 20%;
+}
+
+
+/*-----------------footer--------------*/
+.main-footer{
+    background-color: rgba(228, 224, 237, 0.316);
+    background-image: url("../images/backgroundFooter.png");
+    background-blend-mode: difference;
+    color: white;
+    padding: .25;
+    background-size:cover;
+    padding-bottom:150px;
+
+}
+.main-footer-container {
+    display: flex;
+    align-items:center;
+}
+.main-footer-container ul{
+    flex-grow:1;
+    text-align:center;
+}
+.footer-nav li{
+    padding:0 0.5em;
+}
+.footer-nav img{
+    width:30px;
+    height:30px;
+    border-radius: 20% 20%;
+}
+
+
+    
+
+

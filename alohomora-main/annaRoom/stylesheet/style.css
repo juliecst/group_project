@@ -1,0 +1,122 @@
+/* I used the tutorials from Web Dev Simplified ( https://www.youtube.com/watch?v=1PnVor36_40&list=PLZlA0Gpn_vH-cEDOofOujFIknfZZpIk3a&index=7) to get more familiar with css as well as W3schools for html and css*/
+  
+
+/* everything selector for generals*/
+*{
+    box-sizing:border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+ 
+ /*  getting rid of the white space and making the background fill the entire image  */
+
+ html, body {
+    margin: 0; 
+    padding: 0;
+ }
+ /*there was still a tiny bit left at the ul element so set the margin to 0 here too */
+ .nav ul{
+    margin:0; 
+ }
+ .nav li {
+    display: inline;
+ }
+/* styles the header*/
+ .nav a{
+    /* space out the header elements from each other */
+    display: inline-block;
+    padding: .5em;
+    color: rgba(215, 42, 128);
+    font-weight: bold;
+    background-color:rgb(17, 19, 20);
+ }
+
+ .main-nav{  
+    text-align:center;
+    font-size: 1.1 em; 
+    font-weight:900;
+    border-bottom: 1px solid rgba(215, 215, 128);
+ }
+
+ .main-nav li {
+    padding: 6% 5%
+ }
+
+ .nav a:hover{
+    background-color: rgba(231, 137, 206, 0.281);
+ }
+.main-header {
+    background-image: url("../images/backgroundHead.jpeg");
+    background-size: cover;
+    padding-bottom: 3px;
+}
+.piece-name{
+    text-align: center;
+    margin: 0;
+    font-size: 6em;
+    color:#f0ff00;
+}
+.piece-name-large {
+    font-size: 7em;
+    color:#f0ff00;
+}
+.sub-name {
+    text-align:center;
+    font-size: 5em;
+    color:#f0ff00;
+}
+
+
+/*main part*/
+.main-body{
+    background-color: rgba(182, 153, 195, 0.326);
+    background-image: url("../images/backgroundYim.jpeg");
+    background-blend-mode: difference; /* blends the background color with the background image */
+    background-size: cover; 
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+.body-header{
+    margin: 2em;
+}
+
+.video{
+    max-width: 60 rem; 
+    width: 100%; 
+    height: 200%;
+}
+.tag{
+    margin-top:50px;
+    margin-left:150px;
+    margin-right:150px;
+    text-align: center;
+    font-weight: 700;
+    background: rgba(255,255,255,0.5)
+}
+
+/* footer*/
+.main-footer{
+    background-color: rgba(225, 92, 158, 0.316);
+    background-image: url("../images/soft_electric.jpg");
+    background-blend-mode: multiply;
+    color: white;
+    padding: .25;
+    background-size:cover;
+    padding-bottom:20px;
+  
+
+}
+main-footer-container {
+    display: flex;
+    align-items:center;
+}
+.main-footer-container ul{
+    flex-grow:0.5;
+    text-align:center;
+}
+.footer-nav li{
+    padding:0 .5em;
+}
+.footer-nav img{
+    width:30px;
+    height:30px;
+}

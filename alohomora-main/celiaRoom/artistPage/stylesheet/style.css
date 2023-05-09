@@ -1,0 +1,209 @@
+/* I used the tutorials from Web Dev Simplified ( https://www.youtube.com/watch?v=1PnVor36_40&list=PLZlA0Gpn_vH-cEDOofOujFIknfZZpIk3a&index=7) to get more familiar with css as well as W3schools for html and css*/
+
+
+
+/* for large text*/
+*{
+    box-sizing:border-box;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+ /*  getting rid of the white space and making the background fill the entire image  */
+
+ html, body {
+    margin: 0; 
+    padding: 0;
+ }
+ /*there was still a tiny bit left at the ul element so set the margin to 0 here too */
+
+ .nav ul{
+    margin:0; 
+ }
+ .nav li {
+    display: inline;
+ }
+ .nav a{
+    /* space out the header elements from each other */
+    display: inline-block;
+    padding: .5em;
+    color: rgb(237, 48, 104);
+    background-color:rgb(17, 19, 20)
+ }
+ .main-nav{
+    padding-top: 10px;
+    text-align:center;
+    font-size: 1.1 em; 
+    font-weight:900;
+    border-bottom: 1px solid rgba(215, 215, 128);
+ }
+
+ .main-nav li {
+    padding: 6% 5%
+ }
+
+ .nav a:hover{
+    background-color: rgba(231, 137, 206, 0.281);
+ }
+
+ .main-header {
+    background-image: url("../images/backgroundHead.jpeg");
+    background-size: cover;
+    padding-bottom: 13px;
+    color:#13add4;
+    background-blend-mode: difference;
+}
+
+.piece-name{
+    text-align: center;
+    margin: 0;
+    font-size: 6em;
+    color:#f0ff00;
+    
+}
+.piece-name-large {
+    font-size: 7em;
+    color:#f0ff00;
+}
+.sub-name {
+    text-align:center;
+    font-size: 5em;
+    color:#f0ff00;
+}
+/*------------ main --------*/
+.container{
+    max-width: 900 px;
+    padding: 0;
+    margin: 0 auto; 
+    line-height: 1.5;
+    color: #777;
+    background-image: url("../images/backgroundYim.jpeg");
+    background-color: rgb(242, 237, 239);
+    background-size: cover;
+    background-blend-mode: difference;
+}
+
+.content-section{
+    text-align: right;
+}
+
+.section-header {
+    text-align: center; 
+    font-size: 2.5em; 
+}
+
+.side-text {
+    margin: -10px 25px;
+}
+.bathtub{
+    float: left;
+    height: 60%;
+    width: 60%;
+    margin: 20px;
+    
+}
+.about-image{
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 50% 20%;
+}
+/*------------ BUTTON--------*/
+.btn {
+    text-align:center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header{
+    margin:5em 15% 2em 15%;
+    color: rgb(109, 95, 95);
+    border: 2px solid #9db8e4e5;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right:2em;
+}
+
+.btn-header-hover{
+    background-color:rgba(255,255,255,0.3);
+}
+
+.btn-primary {
+    color: rgb(111, 99, 99);
+    background-color:aqua;
+    border: none;
+    border-radius:.3em;
+    font-weight: bold;
+}
+
+.btn-play-hover{
+    background-color:#13add4; 
+}
+/*-----------------artists--------------*/
+.artist-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* puts an even amout of space btw items*/
+}
+
+.artist-item{
+    margin:30px;
+}
+
+.artist-item-title{
+    display: block;
+    width:100%;
+    text-align: center;
+    font-weight:bold;
+    font-size:1.5em;
+    color:#f0ff00;
+    margin-bottom: 15px;
+}
+
+.artist-item-image{
+    height: 250px;
+}
+
+.artist-item-details{
+    display: flex; /*centers items vertically*/
+    align-items:center;
+    padding: 5px;
+}
+.artist-item-title{
+   flex-grow:1;
+
+
+}
+/*-----------------footer--------------*/
+.main-footer{
+    background-color: rgba(228, 224, 237, 0.316);
+    background-image: url("../images/backgroundFooter.png");
+    background-blend-mode: difference;
+    color: rgba(215, 42, 128);
+    padding: .25;
+    background-size:cover;
+    padding-bottom:150px;
+
+}
+.main-footer-container {
+    display: flex;
+    align-items:center;
+}
+.main-footer-container ul{
+    flex-grow:1;
+    text-align:center;
+}
+.footer-nav li{
+    padding:0 0.5em;
+}
+.footer-nav img{
+    width:30px;
+    height:30px;
+    border-radius: 20% 20%;
+}
+
+
